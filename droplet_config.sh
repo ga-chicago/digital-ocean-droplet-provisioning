@@ -24,7 +24,6 @@ apt-get install libpq-dev -Y
 gem install pg
 
 ###--- gems!
-apt-get install ruby -y
 gem install json
 gem install bundler
 gem install sinatra
