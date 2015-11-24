@@ -1,19 +1,19 @@
 #!/bin/bash
-apt-get update
+apt-get update -Y
 # updates the list of software our server knows about
 
-apt-get install ruby-dev
+apt-get install ruby-dev -Y
 # installs the tools we need for a ruby environment
 
-apt-get install build-essential
+apt-get install build-essential -Y
 # essential build tools such as GCC
 
-apt-get install git
+apt-get install git -Y
 # what's going on with git right now?
 
 ###--- postgres database!
-apt-get install postgresql
-apt-get install postgresql-contrib
+apt-get install postgresql -Y
+apt-get install postgresql-contrib -Y
 
 # create a user
 sudo -u postgres createuser -s $USER
