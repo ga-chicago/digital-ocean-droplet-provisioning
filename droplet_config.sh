@@ -3,6 +3,7 @@ apt-get update
 # updates the list of software our server knows about
 
 apt-get install ruby-dev -Y
+apt-get install ruby -Y
 # installs the tools we need for a ruby environment
 
 apt-get install build-essential -Y
@@ -19,7 +20,7 @@ apt-get install postgresql-contrib -Y
 sudo -u postgres createuser -s $USER
 createdb $USER
 touch ~/.psql_history
-apt-get install libpq-dev
+apt-get install libpq-dev -Y
 gem install pg
 
 ###--- gems!
