@@ -1,5 +1,5 @@
 #!/bin/bash
-apt-get update -Y
+apt-get update
 # updates the list of software our server knows about
 
 apt-get install ruby-dev -Y
@@ -23,6 +23,7 @@ apt-get install libpq-dev
 gem install pg
 
 ###--- gems!
+apt-get install ruby -y
 gem install json
 gem install bundler
 gem install sinatra
