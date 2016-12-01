@@ -77,6 +77,8 @@ Open up terminal and enter in the following commands:
   9. `nano Gemfile`, ctrl-x to exit, S to save; repeat x3
 
 
+## 4. Provisioning your virtual server
+
 
 
 ## FAQ
