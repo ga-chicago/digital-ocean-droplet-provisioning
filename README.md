@@ -44,7 +44,7 @@ Because we want to make sure that you and only you - not some hacker in Russia, 
 Open up terminal and enter in the following commands:
 
   1. `ls -al ~/.ssh` - list all of the keys in the ./ssh directory. You should see an `id_rsa.pub`. This is your public key.
-  3. `atom ~/.ssh/id_rsa.pub` - Open the key in atom so we can use it in just a moment.
+  3. `subl ~/.ssh/id_rsa.pub` - Open the key in Sublime Text so we can use it in just a moment.
 
 > Now that we have our SSH key, it is time to create a droplet!
 
