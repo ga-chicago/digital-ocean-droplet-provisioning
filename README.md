@@ -68,14 +68,15 @@ Open up terminal and enter in the following commands:
   1. Log into the remote server (Droplet)
   2. `ssh root@0.0.0.0`
   3. I'm magically logged in because it used my private key from earlier to authenticate who I am!
-  4. I need to update the system! `apt-get update`
-  5. I need to install Ruby! `apt-get install ruby`
-  6.
-  6. Now that I have Ruby installed, I can now install gems! `gem install bundler`, `gem install pry`
-  7. Awesome, I have everything I need to run an app! Time to make one!
-  8. `touch Gemfile config.ru app.rb`
-  9. `nano Gemfile`, ctrl-x to exit, S to save; repeat x3
+  4. I need to update the system! `apt update`
+  5. Now, explore your filesystem. `apt install tree` to use the `tree` command.
+  6. `apt` is similar to `brew` for Mac OS X - it is a package manager for command line applications.
+  7. `pwd` and `cd` around. Feel free to `mkdir` a few files. Things should look _very_ familiar.
+  8. If you installed the default version of Ubuntu, you might notice you're in a `bash` shell.
+  9. Consider looking for your `.bash_profile` on this system.
+  10. Once you're done practicing your Unix/Linux skills, move on.
 
+> _Hint_: Like any other computer, a user can `logout` of a system to exit.
 
 ## 4. Provisioning your virtual server
 
