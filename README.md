@@ -213,17 +213,28 @@ Clone any applications you'd like to run using Git in the `/var/www` folder. Thi
 
 > 🔑 Consider using Puma over Rack for hosting higher-traffic websites. 
 
-To deploy a Ruby application, clone your Git project into your
+To deploy a Ruby application, clone your Git project into your `/var/www/` folder and change into it. Install the required gems for your application:
 
-## FAQ
+```bash
+bundle install
+```
+
+Now, you can deploy your application via:
+
+```bash
+nohup bundle exec rackup -p 80 --host 0.0.0.0
+```
 
 **What is nohup?**
 - `nohup`: Do not listen to the `hup` signal when terminal is closed
 - `bundle exec`: Use the gem versions in the Gemfile.lock to execute the command
 - `rackup -p 80`: Run the application on port 80
 - `&`: Run this command in the background
+- `0.0.0.0` broadcasts to all addresses on this machine.
 
-nohup bundle exec rackup -p 80 --host 0.0.0.0
+
+
+## FAQ
 
 **How do I use Nano?**
 - Exit - ctrl-x
