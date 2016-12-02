@@ -68,7 +68,7 @@ Open up terminal and enter in the following commands:
   1. Log into the remote server (Droplet)
   2. `ssh root@0.0.0.0`
   3. I'm magically logged in because it used my private key from earlier to authenticate who I am!
-  4. I need to update the system! `apt update`
+  4. I need to update the system's repositores! `apt update`
   5. Now, explore your filesystem. `apt install tree` to use the `tree` command.
   6. `apt` is similar to `brew` for Mac OS X - it is a package manager for command line applications.
   7. `pwd` and `cd` around. Feel free to `mkdir` a few files. Things should look _very_ familiar.
