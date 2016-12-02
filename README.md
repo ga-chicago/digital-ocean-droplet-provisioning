@@ -186,6 +186,34 @@ npm -v
 node -v
 ```
 
+## 5. Deploying an application
+
+Applications on a server are ran just like any other application on your laptop - through terminal commands. To make an application run on your virtual server, you must consider how it runs on your laptop. Does it need a database? Is that database running? Did you change your environment variables to reflect the different SQL users between your laptop and server? There are a lot of things to consider when deploying an application. Before diving into specific platforms, here are some questions to consider:
+
+- Is Git installed? 
+- Have you cloned your application to your server yet?
+- Does my application require a database? Is it the same type on my computer and server?
+- Have I created appropriate SQL users for my database?
+- Have I updated my config files and environment variables to point to the proper server?
+- Have I removed all breakpoints and set my app to run in production mode (vs development)?
+- Have I ran all database related tasks (Rake, Gulp, ...)?
+
+Now, we need to create a directory to store all of our web applications.
+
+```bash
+cd /        # root directory
+cd /var     # var dir
+mkdir www   # creates /var/www
+pwd         # /var/www
+```
+
+Clone any applications you'd like to run using Git in the `/var/www` folder. This is the typical location for storing web applications on Debian (Ubuntu) linux servers. This location is one of the defaults that has been constant throughout decades of web development.
+
+### Deploying Ruby Applications
+
+> 🔑 Consider using Puma over Rack for hosting higher-traffic websites. 
+
+To deploy a Ruby application, clone your Git project into your
 
 ## FAQ
 
