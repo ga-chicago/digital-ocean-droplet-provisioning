@@ -136,13 +136,23 @@ sudo service mysql status
 
 To login to MySQL, you may do so with `mysql -p`. `-p` specifies that the user is using a password (so it requests you enter one). 
 
+### MongoDB
+
+We recommend using the official installation guide for Ubuntu from Mongodb: https://docs.mongodb.com/v3.2/tutorial/install-mongodb-on-ubuntu/
+
 ### Node.js (LTS v4.0)
 
 This version of node is the first LTS release post the io.js merger. Usage of many Javascript 2015 (ES6) features requires `'use strict'` or are not available at all. Node isn't included with the standard list of applications available in `apt`. We'll need to add it ourselves:
 
-`curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -`
+```bash
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+```
 
-Once completed, we can then install Node by running `apt install nodejs`.
+Once completed, we can then install Node by running:
+
+```bash
+apt install nodejs
+```
 
 You can verify that Node and _npm_ have been installed by running the following commands.
 
@@ -152,6 +162,26 @@ node -v
 ```
 
 ### Node.js (LTS v6.0)
+
+This version of node contains most Javasript 2015 (ES6) features availability directly in Node without the need of transpiling. Node isn't included with the standard list of applications available in `apt`. We'll need to add it ourselves:
+
+```bash
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+```
+
+Once completed, we can then install Node by running:
+
+```bash
+apt install nodejs
+```
+
+You can verify that Node and _npm_ have been installed by running the following commands.
+
+```bash
+npm -v
+node -v
+```
+
 
 ## FAQ
 
