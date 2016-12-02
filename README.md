@@ -59,7 +59,7 @@ Open up terminal and enter in the following commands:
   4. Select the $5/month size for your Droplet (hobby sites use less resources than large production sites)
   5. Select a region.
   6. Ignore the available settings.
-  7. Select the **Ubuntu 14.04 x64** operating system.
+  7. Select the **Ubuntu 16.x x64** operating system.
   8. Select **Add SSH Key**. You will copy/paste the SSH key that we retreived just moments ago into the text box.
   9. Select **Create Droplet**.
   10. Annnnndd we wait!
