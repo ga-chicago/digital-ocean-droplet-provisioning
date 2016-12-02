@@ -37,6 +37,8 @@ A **droplet** is a scalable server offered by Digital Ocean. Digital Ocean suppo
 
 #### Locate an SSH Key
 
+> 🔑 Keep your SSH key private. These are meant to be kept secret; kept safe. Don't share it with strangers.
+
 We need to create a secure way for you to log into any Droplet that you create. We're going to use an private key that you already are using on your computer. You should only share private keys with entities you trust! I only share mine with my computers and the servers I run. I even have a copy of mine in my will! They're private!
 
 Because we want to make sure that you and only you - not some hacker in Russia, not some script kiddie in China - has access to your droplet, we'll use a private key that we're already comfortable with to connect to the server.
@@ -48,7 +50,6 @@ Open up terminal and enter in the following commands:
 
 > Now that we have our SSH key, it is time to create a droplet!
 
-> 🔑 Keep your SSH key private. These are meant to be kept secret; kept safe. Don't share it with strangers.
 
 #### Create a Droplet
 
@@ -77,8 +78,7 @@ Open up terminal and enter in the following commands:
   8. If you installed the default version of Ubuntu, you might notice you're in a `bash` shell.
   9. Consider looking for your `.bash_profile` on this system.
   10. Once you're done practicing your Unix/Linux skills, move on.
-
-> _Hint_: Like any other computer, a user can `logout` of a system to exit.
+  11. Like any other computer, a user can `logout` of a system to exit.
 
 > 🔑 Right now you're automatically logged in as the **root** user. This user has all of the power on your server. It is best practice create new users to handle specific tasks (such as one user named dba_admin for databases and one named webmaster for web servers).
 
