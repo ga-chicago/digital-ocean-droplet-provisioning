@@ -4,7 +4,7 @@
 
 ## Why?
 
-The goal of this guide is to introduce you to the concept of provisioning a virtual server. In the world of cloud computing, you'll likely deploy applications to various providers such as Heroku, Amazon Web Services, Google Cloud, Microsoft Azure, Rackspace, ... and more. Understanding how to do this on your own is incredibly important. This is meant to be an _introductory_ guide; it only notes where you should implement a more secure best practice. After practicing your first deployment, you should create a test server and test out the recommended techniques that will be mentioned.
+The goal of this guide is to introduce you to the concept of provisioning a virtual server. In the world of cloud computing, you'll likely deploy applications to various providers such as Heroku, Amazon Web Services, Google Cloud, Microsoft Azure, Rackspace, ... and more. Understanding how to do this on your own is incredibly important. This is meant to be an _introductory_ guide; it only notes where you should implement a more secure best practice - you'll see them next to a 🔑. After practicing your first deployment, you should create a test server and test out the recommended techniques that will be mentioned.
 
 ##### Outline
 
@@ -48,6 +48,8 @@ Open up terminal and enter in the following commands:
 
 > Now that we have our SSH key, it is time to create a droplet!
 
+> 🔑 Keep your SSH key private. These are meant to be kept secret; kept safe. Don't share it with strangers.
+
 #### Create a Droplet
 
   1. Log in to Digital Ocean if you have not already done so.
@@ -77,6 +79,8 @@ Open up terminal and enter in the following commands:
   10. Once you're done practicing your Unix/Linux skills, move on.
 
 > _Hint_: Like any other computer, a user can `logout` of a system to exit.
+
+> 🔑 Right now you're automatically logged in as the **root** user. This user has all of the power on your server. It is best practice create new users to handle specific tasks (such as one user named dba_admin for databases and one named webmaster for web servers).
 
 ## 4. Provisioning your virtual server
 
