@@ -232,7 +232,31 @@ nohup bundle exec rackup -p 80 --host 0.0.0.0
 - `&`: Run this command in the background
 - `0.0.0.0` broadcasts to all addresses on this machine.
 
+### Deploying Node Applications
 
+To deploy a Node application, clone your Git project into your `/var/www/` folder and change into it. Install the required modules for your application:
+
+```bash
+npm install
+```
+
+Next, install **pm2**, a process monitor for Node applications.
+
+```bash
+npm install pm2 -g
+```
+
+Finally, you can start your application by running the script specified for `npm start` inside of your `package.json`.
+
+```bash
+pm2 start app.js -x -- --prod
+```
+
+You can stop your application, too (for maintenance and upgrading):
+
+```bash
+pm2 stop app.js -x -- --prod
+```
 
 ## FAQ
 
