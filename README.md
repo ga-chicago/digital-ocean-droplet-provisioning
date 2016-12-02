@@ -1,6 +1,6 @@
 # Digital Ocean Droplet Provisioning
 
-> This guide will show you how to create a virtual server and deploy an app to it.
+> This guide will show you how to create a virtual server and deploy an app to it. :whale:
 
 ## Why?
 
