@@ -80,6 +80,61 @@ Open up terminal and enter in the following commands:
 
 ## 4. Provisioning your virtual server
 
+We're going to use the _apt_ package manager to install a few tools. You might remember using `brew` to do this in Mac OS X earlier during the cohort. Because each environment and application is different, we have provided a few scripts in this repository to help make life easier. This guide will contain a few familiar stacks. You should only install _what you need_ and nothing else. Unneccesary software installed on your software can expose security vulnerabilities that you don't need in the first place. 
+
+#### Everyone
+
+> Install Git
+
+`apt install git`
+
+#### Ruby
+
+> Install Ruby on your linux box
+
+```bash
+apt install ruby        # installs ruby
+apt install ruby-dev    # install build tools necessary for building some gems (bcrypt, json, ...)
+```
+
+Verify Ruby is installed by running `ruby -v`.
+
+#### MySQL
+
+MySQL requires that you add a link to Oracle's repositories. It is not hosted publically on `apt`. First, we'll grab that repository, add it to `apt`, and update `apt` so we can find MySQL.
+
+```bash
+# get the MySQL repository information
+wget http://dev.mysql.com/get/mysql-apt-config_0.8.0-1_all.deb
+# install it
+sudo dpkg -i mysql-apt-config_0.8.0-1_all.deb
+# you'll be provided a GUI option; select the default options (5.7)
+# and exit. this is ok! nothing flashy happens here.
+# update apt so it can point to the MySQL repository
+sudo apt update
+```
+
+Once that is installed, we'll install MySQL.
+
+```bash
+# install a C library that Ruby uses to build the mysql2 gem with
+apt-get install libmysqlclient-dev
+# install mysql
+apt install mysql-server
+```
+
+Once installed, we can control MySQL with the following commands:
+
+```bash
+# start
+sudo service mysql start
+# stop
+sudo service mysql stop
+# info
+sudo service mysql status
+```
+
+To login to MySQL, you may do so with `mysql -p`. `-p` specifies that the user is using a password (so it requests you enter one). 
 
 
 ## FAQ
