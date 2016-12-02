@@ -82,13 +82,13 @@ Open up terminal and enter in the following commands:
 
 We're going to use the _apt_ package manager to install a few tools. You might remember using `brew` to do this in Mac OS X earlier during the cohort. Because each environment and application is different, we have provided a few scripts in this repository to help make life easier. This guide will contain a few familiar stacks. You should only install _what you need_ and nothing else. Unneccesary software installed on your software can expose security vulnerabilities that you don't need in the first place. 
 
-#### Everyone
+### Everyone
 
 > Install Git
 
 `apt install git`
 
-#### Ruby
+### Ruby
 
 > Install Ruby on your linux box
 
@@ -99,7 +99,7 @@ apt install ruby-dev    # install build tools necessary for building some gems (
 
 Verify Ruby is installed by running `ruby -v`.
 
-#### MySQL
+### MySQL
 
 MySQL requires that you add a link to Oracle's repositories. It is not hosted publically on `apt`. First, we'll grab that repository, add it to `apt`, and update `apt` so we can find MySQL.
 
