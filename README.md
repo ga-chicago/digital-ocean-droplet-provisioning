@@ -91,6 +91,7 @@ We're going to use the _apt_ package manager to install a few tools. You might r
 > Install Git
 
 `apt install git`
+`apt install build-essential`
 
 ### Ruby
 
